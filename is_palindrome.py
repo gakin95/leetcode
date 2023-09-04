@@ -1,9 +1,25 @@
+# def isPalindrome(string):
+#     # Write your code here.
+#     reversed_string = []
+#     for char in string:
+#         reversed_string.append(char)
+#     print("".join(reversed_string))
+#     return "".join(reversed_string) == string
+
 def isPalindrome(string):
     # Write your code here.
-    reversed_string = ""
-    for char in reversed(string):
-        reversed_string += char
-    print(string == reversed_string)
+    start = 0
+    end = len(string) - 1
+    while start < int(len(string) / 2):
+        print(start)
+        if string[start] != string[end]:
+            return False
+        start += 1
+        end -= 1
+    return True
 
-isPalindrome("abc")
 
+string = "abcdabc"
+print(isPalindrome(string))
+
+# print(int(len(string)/2))
