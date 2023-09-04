@@ -8,9 +8,9 @@ def tournamentWinner(competitions, results):
         if winner == 0:
             pos = 1
         if opponents[pos] in dic:
-            dic[opponents[pos]] += 1
+            dic[opponents[pos]] += 3
         else:
-            dic[opponents[pos]] = 1
+            dic[opponents[pos]] = 3
 
     max_key = max(dic, key=dic.get)
     return max_key
