@@ -19,3 +19,5 @@ def longestPalindromicSubstring(s):
 
 
 print(longestPalindromicSubstring("xyzzyx"))
+x = -321
+print(abs(x))
