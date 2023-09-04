@@ -18,4 +18,4 @@ def longestPalindromicSubstring(s):
     return longest
 
 
-
+print(longestPalindromicSubstring("xyzzyx"))
