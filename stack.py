@@ -57,6 +57,22 @@ class Solution:
         return len(stack) == 0
 
 
+def reverse_string(string):
+    # return string[::-1]
+    # stack = []
+    # for char in string[::-1]:
+    #     stack.append(char)
+    # return "".join(stack)
+
+    stack = []
+    reversed = []
+    for char in string:
+        stack.append(char)
+    while len(stack) > 0:
+        reversed.append(stack.pop())
+    return "".join(reversed)
+
+
 my_stack = Stack()
 my_stack.push(1)
 my_stack.push(2)
@@ -158,3 +174,5 @@ def test_is_balanced_parentheses():
 
 
 test_is_balanced_parentheses()
+x = "123"
+print(x[::-1])
