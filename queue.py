@@ -10,6 +10,11 @@ class MyQueue:
         while self.stack2:
             self.stack1.append(self.stack2.pop())
 
+    def dequeue(self):
+        if self.stack1:
+            return self.stack1.pop()
+        return None
+
     def peek(self):
         return self.stack1[-1]
 
