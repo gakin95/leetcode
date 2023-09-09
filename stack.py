@@ -73,6 +73,18 @@ def reverse_string(string):
     return "".join(reversed)
 
 
+def sort_stack(s):
+    sorted_stack = Stack()
+    while not s.is_empty():
+        temp = s.pop()
+        while not sorted_stack.is_empty() and sorted_stack.peek() > temp:
+            s.push(sorted_stack.pop())
+        sorted_stack.push(temp)
+
+    while not sorted_stack.is_empty():
+        s.push(sorted_stack.pop())
+
+
 my_stack = Stack()
 my_stack.push(1)
 my_stack.push(2)
