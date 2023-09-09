@@ -11,5 +11,6 @@ class Solution:
                 cur = 0
             cur += num
             max_sub = max(cur, max_sub)
-            
+
         return max_sub
+
