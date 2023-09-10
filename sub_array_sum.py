@@ -23,6 +23,10 @@ nums = [2, 3, 4, 5, 6]
 target = 3
 print(subarray_sum(nums, target))
 
+nums = [-2,-1,-3,4,-1,2,1,-5,4]
+target = 6
+print(subarray_sum(nums, target))
+
 nums = []
 target = 0
 print(subarray_sum(nums, target))
