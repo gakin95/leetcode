@@ -1,3 +1,6 @@
+from is_palindrome import string
+
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -70,6 +73,13 @@ print(my_tree.contains(27))
 
 print('\nBST Contains 17:')
 print(my_tree.contains(17))
+
+xm = [7] * 6
+s = "ate"
+sorted_string = ''.join(sorted(s))
+print(s)
+print(sorted_string)
+
 
 """
     EXPECTED OUTPUT:
